@@ -94,16 +94,47 @@ export default function Header() {
           </button>
         </div>
       </div>
-      <nav
-        className={` mobile-menu flex flex-col justify-between gap-3 items-center my-2 header-nav ${
-          isNavVisible ? "" : "hidden"
-        }`}
-      >
-        <button>Home</button>
-        <button>About</button>
-        <button>Team</button>
-        <button>Pricing</button>
-        <button>Contact</button>
+      <nav className=" hidden lg:flex flex-col sm:flex-row justify-between gap-3 basis-2/6 header-nav ">
+        <button
+          className="hover:text-[#24D075]"
+          onClick={() => {
+            history.push("/");
+          }}
+        >
+          Home
+        </button>
+        <button
+          className="hover:text-[#24D075]"
+          onClick={() => {
+            history.push("/about");
+          }}
+        >
+          About
+        </button>
+        <button
+          className="hover:text-[#24D075]"
+          onClick={() => {
+            history.push("/team");
+          }}
+        >
+          Team
+        </button>
+        <button
+          className="hover:text-[#24D075]"
+          onClick={() => {
+            history.push("/products");
+          }}
+        >
+          Product
+        </button>
+        <button
+          className="hover:text-[#24D075]"
+          onClick={() => {
+            history.push("/contact");
+          }}
+        >
+          Contact
+        </button>
       </nav>
     </div>
   );
