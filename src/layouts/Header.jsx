@@ -94,7 +94,11 @@ export default function Header() {
           </button>
         </div>
       </div>
-      <nav className=" hidden lg:flex flex-col sm:flex-row justify-between gap-3 basis-2/6 header-nav ">
+      <nav
+        className={` mobile-menu flex flex-col justify-between gap-3 items-center my-2 header-nav ${
+          isNavVisible ? "" : "hidden"
+        }`}
+      >
         <button
           className="hover:text-[#24D075]"
           onClick={() => {
