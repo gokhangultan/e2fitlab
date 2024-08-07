@@ -1,0 +1,25 @@
+#root {
+    margin: 0 auto;
+    font-family: "Montserrat", sans-serif;
+  }
+.header-nav{
+    @apply font-bold uppercase leading-5 ;
+}
+.container {
+    @apply px-[50px] md:px-[125px];
+}
+
+.button {
+    @apply text-white px-4 py-3 sm:px-8 sm:py-3 font-bold rounded-md border text-sm;
+  
+  }
+
+  .product-card-more {
+    @apply hover:border-[#24D075] w-[101px] h-[24px] hover:bg-[#24D075] hover:text-white rounded-xl text-sm leading-6;
+  }
+  
+  .primary-button {
+    @apply bg-green-500 hover:bg-transparent hover:border-green-500 hover:text-green-500;
+  
+  }
+
